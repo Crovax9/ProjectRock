@@ -24,23 +24,23 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         Vector3 movement;
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
             movement = this.transform.forward;
             rb.AddForce(movement * speed, ForceMode.Force);
         }
-        else if (Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
             movement = this.transform.forward;
             rb.AddForce(movement * -speed);
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             movement = this.transform.right;
             rb.AddForce(movement * -speed);
             Debug.Log(movement);
         }
-        else if (Input.GetKey(KeyCode.RightArrow))
+        else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             movement = this.transform.right;
             rb.AddForce(movement * speed);
