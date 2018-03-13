@@ -108,6 +108,59 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &328355103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 328355105}
+  - component: {fileID: 328355104}
+  - component: {fileID: 328355106}
+  m_Layer: 0
+  m_Name: WindZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &328355104
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 328355103}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 700, y: 300, z: 500}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &328355105
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 328355103}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1391, y: 207, z: 1662}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &328355106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 328355103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df5f3e04de85c3543aa5e1f10adf1d06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &534328666 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400004, guid: 33642fb64b645c74fa2c3b7f0b483db8, type: 2}
@@ -190,7 +243,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 634222099}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2042.3, y: 539.4, z: 107}
+  m_LocalPosition: {x: 2052, y: 512.9, z: 134.5}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children:
   - {fileID: 1653535409}
@@ -363,11 +416,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 33642fb64b645c74fa2c3b7f0b483db8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 304.9
+      value: 249.7
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 33642fb64b645c74fa2c3b7f0b483db8, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1989
+      value: 1874
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 33642fb64b645c74fa2c3b7f0b483db8, type: 2}
       propertyPath: m_LocalRotation.x
@@ -838,11 +891,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: 33642fb64b645c74fa2c3b7f0b483db8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 914
+      value: 1110.7
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 33642fb64b645c74fa2c3b7f0b483db8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 304.9
+      value: 245
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 33642fb64b645c74fa2c3b7f0b483db8, type: 2}
       propertyPath: m_LocalPosition.z
