@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4443418617467060}
   - component: {fileID: 33632925678811572}
   - component: {fileID: 23283756497774514}
+  - component: {fileID: 114940715868516110}
   m_Layer: 0
   m_Name: Fence
   m_TagString: Untagged
@@ -36,7 +37,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4547444753958424}
-  - component: {fileID: 95135039831589518}
+  - component: {fileID: 65980454650912296}
+  - component: {fileID: 114700826234770628}
   m_Layer: 0
   m_Name: Fence
   m_TagString: Untagged
@@ -63,8 +65,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1748344094105306}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 584.5338, y: 248.53815, z: 2176.2827}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2074, y: 392.1, z: 375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4443418617467060}
@@ -110,20 +112,37 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1388687442503470}
   m_Mesh: {fileID: 4300010, guid: 287afd9b1efb594418c273bff234a1a9, type: 3}
---- !u!95 &95135039831589518
-Animator:
-  serializedVersion: 3
+--- !u!65 &65980454650912296
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1748344094105306}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 60, y: 70, z: 5}
+  m_Center: {x: -6.67, y: 11.72, z: 0}
+--- !u!114 &114700826234770628
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1748344094105306}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 287afd9b1efb594418c273bff234a1a9, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 607d05a6d4007c84d929ae92aad1cd02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114940715868516110
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1388687442503470}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a5887d634c3aa947a11c8ce79d352eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
