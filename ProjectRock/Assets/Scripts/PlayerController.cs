@@ -14,13 +14,14 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    
     private void LateUpdate()
     {
         CameraRotationX = Input.GetAxis("Mouse X") * 10.0f;
 
         this.transform.Rotate(Vector3.up, CameraRotationX);
     }
-
+    
     private void FixedUpdate()
     {
         Vector3 movement;
@@ -44,6 +45,22 @@ public class PlayerController : MonoBehaviour
         {
             movement = this.transform.right;
             rb.AddForce(movement * speed);
+        }
+
+        Physics.IgnoreLayerCollision(9, 10);
+    }
+
+    void Boom()
+    {
+        Collider[] List = Physics.OverlapSphere(transform.position, 50f);
+
+        foreach (Collider list in List)
+        {
+            Rigidbody rigid = list.gameObject.GetComponent<Rigidbody>();
+            if (rigid != null)
+            {
+                rigid.AddExplosionForce(50000.0f, this.transform.position, 10.0f, 3000.0f);
+            }
         }
     }
 }

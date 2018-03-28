@@ -66,14 +66,11 @@ public class MeshSplit : MonoBehaviour {
                 GO.transform.rotation = transform.rotation;
                 GO.AddComponent<MeshRenderer>().material = materials[submesh];
                 GO.AddComponent<MeshFilter>().mesh = mesh;
-                if (this.transform.CompareTag("TNT"))
-                {
-                    GO.AddComponent<BoxCollider>();
-                }
+                GO.AddComponent<BoxCollider>();
                 GO.layer = 10;
-                Vector3 explosionPos = new Vector3(transform.position.x + Random.Range(-0.5f, 0.5f), transform.position.y + Random.Range(0f, 0.5f), transform.position.z + Random.Range(-0.5f, 0.5f));
+                Vector3 explosionPos = new Vector3(transform.position.x + Random.Range(-0.5f, 0.5f), transform.position.y + Random.Range(-0.5f, 0.5f), transform.position.z + Random.Range(-0.5f, 0.5f));
 
-                GO.AddComponent<Rigidbody>().AddExplosionForce(Random.Range(300, 500), explosionPos, 5);
+                GO.AddComponent<Rigidbody>().AddExplosionForce(Random.Range(3000, 5000), explosionPos, 5);
                 Destroy(GO, 5 + Random.Range(0.0f, 1.0f));
 
             }

@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class GateHP : MonoBehaviour
 {
-    static float hp = 100;
+    static float hp = 1000;
     private void OnTriggerEnter(Collider other)
     {
         Rigidbody rb = other.GetComponent<Rigidbody>();
-        hp -= rb.velocity.sqrMagnitude * 0.1f;
+        hp -= rb.velocity.sqrMagnitude * 0.01f;
         Debug.Log(hp);
         if (hp > 0)
         {
