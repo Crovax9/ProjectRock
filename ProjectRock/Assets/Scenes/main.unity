@@ -329,7 +329,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 634222099}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2052, y: 512, z: 135}
+  m_LocalPosition: {x: 563, y: 161, z: 1550}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children:
   - {fileID: 1653535409}
@@ -432,6 +432,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3932ed86060ae5b41a380909f3cf7779, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &772529911 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100004, guid: 9e187287cc799544093050c9648b6fe5, type: 3}
+  m_PrefabInternal: {fileID: 1639272847}
+--- !u!65 &772529912
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 772529911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 100, z: 100}
+  m_Center: {x: -5.2, y: 38.21, z: 28.86}
 --- !u!4 &879436156 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4547444753958424, guid: 3932ed86060ae5b41a380909f3cf7779,
@@ -446,15 +462,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4823944196654596, guid: acc8c6a708ff52f4fa5b31f02b55661f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 138
+      value: 1050
       objectReference: {fileID: 0}
     - target: {fileID: 4823944196654596, guid: acc8c6a708ff52f4fa5b31f02b55661f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 225
+      value: 229
       objectReference: {fileID: 0}
     - target: {fileID: 4823944196654596, guid: acc8c6a708ff52f4fa5b31f02b55661f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 370
+      value: 1065
       objectReference: {fileID: 0}
     - target: {fileID: 4823944196654596, guid: acc8c6a708ff52f4fa5b31f02b55661f, type: 2}
       propertyPath: m_LocalRotation.x
@@ -689,7 +705,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4823944196654596, guid: acc8c6a708ff52f4fa5b31f02b55661f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1709
+      value: 1770
       objectReference: {fileID: 0}
     - target: {fileID: 4823944196654596, guid: acc8c6a708ff52f4fa5b31f02b55661f, type: 2}
       propertyPath: m_LocalPosition.y
@@ -865,7 +881,12 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 100000, guid: 9e187287cc799544093050c9648b6fe5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: 9e187287cc799544093050c9648b6fe5, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 9e187287cc799544093050c9648b6fe5, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &1639272848 stripped
@@ -934,6 +955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eed7df2d9aa20c242a8f88ddf20fb4ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parentCollider: {fileID: 772529912}
 --- !u!1001 &1645352457
 Prefab:
   m_ObjectHideFlags: 0
@@ -988,7 +1010,6 @@ GameObject:
   - component: {fileID: 1653535407}
   - component: {fileID: 1653535406}
   - component: {fileID: 1653535405}
-  - component: {fileID: 1653535410}
   m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1066,23 +1087,6 @@ Transform:
   m_Father: {fileID: 634222103}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 25.076002, y: 0, z: 0}
---- !u!114 &1653535410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1653535404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edd0213becb7ed343a1b6095e695b32d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 634222099}
-  TargetCamera: {fileID: 1653535408}
-  CameraRotationX: 0
-  CameraLookOffset: {x: 0, y: 3, z: 0}
-  CameraRelativePosition: {x: 0, y: 6, z: -5}
-  Speed: 2
 --- !u!4 &1689353895 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4547444753958424, guid: 3932ed86060ae5b41a380909f3cf7779,
